@@ -3,6 +3,6 @@ import 'package:provider/provider.dart';
 
 final List<ChangeNotifierProvider> providerList = [
 
-  ChangeNotifierProvider(create: (_)=> SplashScreenProvider()),
+   ChangeNotifierProvider<SplashScreenProvider>(create: (_) => SplashScreenProvider()),
 
 ];

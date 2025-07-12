@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 class SplashScreenProvider extends ChangeNotifier {
-  bool isLoading = false;
+  bool isLoading = true;
 
-  splashProvider() {
+  SplashScreenProvider() {
     init();
   }
 
   Future<void> init() async {
-    await Future.delayed(Duration(seconds: 3));
-    isLoading = true;
+    await Future.delayed(Duration(seconds: 10));
+    isLoading = false;
     notifyListeners();
   }
 }
